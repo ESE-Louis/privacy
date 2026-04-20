@@ -1,1 +1,105 @@
-Predicta
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Sales Call Prep by Predicta</title>
+</head>
+<body>
+<h1>Privacy Policy — Sales Call Prep by Predicta</h1>
+<p>Last updated: April 2026 | Version 2.0</p>
+
+<h2>1. Overview</h2>
+<p>Sales Call Prep is a Chrome browser extension built and operated by Predicta (Louis Nonis, Melbourne, Australia). This policy explains how the Extension collects, uses, stores and shares your data.</p>
+<p>The Extension stores minimal data locally in your browser. LinkedIn profile text is processed in real-time to generate your brief and is never stored by Predicta.</p>
+<p>By installing the Extension you agree to this policy. If you do not agree, please uninstall it.</p>
+
+<h2>2. What data we collect</h2>
+<p>The Extension collects and handles the following data:</p>
+<ul>
+<li><strong>Your name and company</strong> (optional, entered in Settings) — to personalise brief output. Stored locally in your browser only.</li>
+<li><strong>Brief usage count</strong> — number of briefs generated, to manage the 5 free brief limit. Stored locally in your browser only.</li>
+<li><strong>Anonymous user ID</strong> — a randomly generated identifier created on first use, with no connection to your identity. Used to track usage limits on our backend. Stored locally and on our backend (anonymous only).</li>
+<li><strong>Licence key</strong> (if you upgrade to Pro) — to verify your Pro subscription. Stored locally only.</li>
+<li><strong>Licence email</strong> (if you upgrade to Pro) — the email used to generate your licence key. Stored locally only.</li>
+<li><strong>LinkedIn profile text</strong> — visible text from the LinkedIn page you are actively viewing, used to generate your brief. Transmitted to our backend API for real-time processing only and is never stored or logged.</li>
+</ul>
+
+<h2>3. What we do NOT collect</h2>
+<p>Predicta does not collect, store or have access to:</p>
+<ul>
+<li>Your real name or email address unless voluntarily entered in Settings</li>
+<li>Your browsing history or URLs of other pages you visit</li>
+<li>The content of generated briefs — returned to your browser and not retained</li>
+<li>Your IP address or location data</li>
+<li>Analytics, telemetry or behavioural tracking data</li>
+<li>Cookies or persistent tracking identifiers</li>
+<li>Data from any tab other than the active LinkedIn profile</li>
+<li>Payment card details (handled entirely by Stripe)</li>
+<li>Passwords or authentication tokens</li>
+</ul>
+
+<h2>4. How data is used</h2>
+<p>Data is used solely for:</p>
+<ul>
+<li><strong>Generating briefs</strong> — Your name, company and LinkedIn profile text are sent to our backend API to generate a personalised sales call prep brief via the Anthropic AI API</li>
+<li><strong>Managing your free trial</strong> — Your anonymous user ID and brief count enforce the 5 free brief limit</li>
+<li><strong>Verifying Pro subscriptions</strong> — Your licence key is validated to determine whether you have an active Pro subscription</li>
+<li><strong>Personalising output</strong> — Your name and company are included in the AI prompt to make briefs relevant to your sales context</li>
+</ul>
+<p>We do not use your data for advertising, marketing profiling, selling to third parties, or any purpose unrelated to generating sales call briefs.</p>
+
+<h2>5. Data storage</h2>
+<p><strong>Local storage (your device):</strong> Settings, usage count, licence key and user ID are stored using Chrome's chrome.storage.local API on your device only. This data is never synced to any cloud service, is cleared when you uninstall the Extension, and is fully within your control.</p>
+<p><strong>Backend server (anonymous only):</strong> Your anonymous user ID and brief usage count are stored on our backend server (hosted on Vercel) to enforce the free brief limit. No personally identifiable information is stored on our servers. This data resets periodically.</p>
+<p>LinkedIn profile text is processed in real-time and is not stored or logged after your brief is returned. All data transmission uses encrypted HTTPS.</p>
+
+<h2>6. Data sharing</h2>
+<p>Predicta does not sell, rent, trade or share your personal data with third parties for commercial purposes.</p>
+<p>Data is shared only in these limited circumstances:</p>
+<ul>
+<li><strong>Anthropic API</strong> — LinkedIn profile text, your name/company and call context are sent to the Anthropic API to generate your brief, subject to Anthropic's Privacy Policy. Predicta does not retain this data.</li>
+<li><strong>Stripe</strong> — If you upgrade to Pro, payment is processed by Stripe. Predicta receives only payment confirmation. Card details are never seen by Predicta, subject to Stripe's Privacy Policy.</li>
+<li><strong>Vercel</strong> — Our backend API is hosted on Vercel. Anonymous usage data is processed on Vercel's infrastructure, subject to Vercel's Privacy Policy.</li>
+<li><strong>Legal requirements</strong> — We may disclose data if required by law or valid legal process.</li>
+</ul>
+<p>We do not share your data with advertisers, data brokers, analytics providers or any other third parties beyond those listed above.</p>
+
+<h2>7. Third-party services</h2>
+<p><strong>Anthropic API:</strong> LinkedIn profile text, name/company and call type are sent to Anthropic to generate your brief. See <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a>.</p>
+<p><strong>Vercel:</strong> Our backend is hosted on Vercel. Anonymous user ID and brief count are processed there. See <a href="https://vercel.com/legal/privacy-policy">Vercel's Privacy Policy</a>.</p>
+<p><strong>Stripe:</strong> Pro payments processed by Stripe. See <a href="https://stripe.com/privacy">Stripe's Privacy Policy</a>. Predicta receives only payment confirmation.</p>
+
+<h2>8. LinkedIn data handling</h2>
+<p>When you generate a brief, the Extension reads visible text from the LinkedIn profile page open in your browser. This data is:</p>
+<ul>
+<li>Read directly from the page — not via LinkedIn's API</li>
+<li>Sent to our backend API over encrypted HTTPS</li>
+<li>Passed to the Anthropic API to generate your brief</li>
+<li>Not stored, logged or retained after the brief is delivered</li>
+<li>Not used for any purpose other than generating the brief you requested</li>
+<li>Only accessed when you explicitly click Generate Brief — the Extension does not run in the background</li>
+</ul>
+<p>You are responsible for ensuring your use of LinkedIn profile data complies with applicable laws and LinkedIn's Terms of Service.</p>
+
+<h2>9. Your rights</h2>
+<p>You have the following rights regarding your data:</p>
+<ul>
+<li><strong>Access</strong> — View locally stored data via Chrome DevTools: open the Extension, right-click, Inspect, Application, Storage, chrome.storage.local</li>
+<li><strong>Deletion</strong> — Delete all local data by uninstalling the Extension or clearing extension data in Chrome Settings</li>
+<li><strong>Correction</strong> — Update your name and company at any time in the Extension's Settings panel</li>
+<li><strong>Objection</strong> — Stop all data processing by uninstalling the Extension</li>
+</ul>
+<p>For data held on our backend (anonymous usage counts only), contact us and we will delete it within 30 days.</p>
+
+<h2>10. Children's privacy</h2>
+<p>The Extension is designed for professional use by adults aged 18 and over. It is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>We may update this policy from time to time. Changes will be posted at this URL with an updated date. Continued use of the Extension after changes constitutes acceptance.</p>
+
+<h2>12. Contact</h2>
+<p>For questions about this privacy policy or to exercise your data rights, contact:</p>
+<p><strong>Predicta</strong><br>Louis Nonis<br>Melbourne, Australia<br>Email: <a href="mailto:louis@predicta.au">louis@predicta.au</a><br>Website: <a href="https://predicta.au">predicta.au</a></p>
+</body>
+</html>
